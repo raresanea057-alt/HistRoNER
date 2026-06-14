@@ -1,7 +1,7 @@
 
 
 <p align="center">
-  <img src="0520bbfb-8762-40b4-a5cb-35b9a9ffecdb.jpg" alt="HistRoNER demo" width="800"/>
+  <img src="demo.jpg" alt="HistRoNER demo" width="800"/>
 </p>
 
 <p align="center">
