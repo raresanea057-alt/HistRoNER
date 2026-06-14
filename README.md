@@ -1,13 +1,13 @@
 # HistRoNER - Historical Romanian Named Entity Recognition
 A benchmark comparing BiLSTM and fine-tuned BERT-based models for Named Entity Recognition on historical Romanian text from the period 1800–1950.
 
-
 ```mermaid
-flowchart LR
-    DS[(HistNERo dataset\navramandrei/histnero)] --> PRE[Preprocessing\nstrip punctuation · max_len=200]
-    PRE --> VOC[Build vocab\nword → id]
+flowchart TD
+    DS[(HistNERo\navramandrei/histnero)]
+    DS --> PRE[Preprocessing\nstrip punctuation · max_len=200]
+    PRE --> VOC[Build vocab · word → id]
+    PRE --> CAS[Casing features · 3-dim one-hot]
     VOC --> EMB[nn.Embedding learned\nvocab_size × 300]
-    PRE --> CAS[Casing features\n3-dim one-hot]
     EMB --> CAT[Concat · dim 303]
     CAS --> CAT
     CAT --> DROP1[Dropout 0.5]
