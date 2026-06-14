@@ -2,7 +2,7 @@
 A benchmark comparing BiLSTM for Named Entity Recognition on historical Romanian text from the period 1800–1950.
 
 ```mermaid
-flowchart LR
+flowchart TD
     DS[(HistNERo\navramandrei/histnero)]
     DS --> PRE[Preprocessing\nstrip punctuation · max_len=200]
     PRE --> VOC[Build vocab · word → id]
