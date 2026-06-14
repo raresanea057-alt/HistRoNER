@@ -3,7 +3,7 @@ A benchmark comparing BiLSTM and fine-tuned BERT-based models for Named Entity R
 
 
 ```mermaid
-flowchart TD
+flowchart LR
     DS[(HistNERo dataset\navramandrei/histnero)] --> PRE[Preprocessing\nstrip punctuation · max_len=200]
     PRE --> VOC[Build vocab\nword → id]
     VOC --> EMB[nn.Embedding learned\nvocab_size × 300]
